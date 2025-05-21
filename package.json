@@ -1,0 +1,12 @@
+{
+  "name": "pazhasshi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Anoop D",
+  "license": "MIT",
+  "dependencies": {
+    "include-media": "^1.4.9",
+    "photoswipe": "^4.1.3",
+    "swiper": "^6.4.11"
+  }
+}

@@ -1,0 +1,120 @@
+.about-hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: " about-hero-left about-hero-right ";
+    height: 50vh;
+    background: #f3f0ea;
+
+    @include media('<=bigmobile') {
+        background-size: 100% auto;
+        grid-template-columns: 100%;
+        grid-template-areas: "about-hero-left"
+                              "about-hero-right";
+        height: auto;
+    }
+
+    .about-hero__left {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        background-image: url(../../img1/medium/7.jpg);
+        background-size: cover;
+        grid-area: about-hero-left;
+        width: 100%;
+        height: 100%;
+
+        @include media('<=bigmobile') {
+            padding: 20% 0;
+            background-image: url(../../img1/small/7.jpg);
+        }
+
+
+            h1 {
+                font-size: 200%;
+                border: 5px solid #FFF;
+                font-weight: bold;
+                background: rgba(0,0,0,0.4);
+                color: #FFF;
+                padding: 4%;
+
+                @include media('<=bigmobile') {
+                    font-size: 150%;
+                }
+            }
+    }
+
+    .about-hero__right {
+        grid-area: about-hero-right;
+        z-index: 2;
+        line-height:1.4;
+        padding: 3%;
+        font-size: 1.5em;
+        background: #f3f0ea;
+
+        p {
+            padding: 9%;
+        }
+
+        @include media('<=bigmobile') {
+            p{
+            font-size: 0.8em;
+            }
+        }
+    }
+}
+
+.about-center {
+
+    display: grid;
+
+    p{
+        padding: 6% 12%;
+        font-size: 1.4em;
+        line-height: 1.4;
+
+        @include media('<=bigmobile') {
+            font-size: 1.2em;
+        }
+    }
+    
+
+}
+
+.about-bottom {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+    background-color: #F3F0EA;
+    grid-template-areas: "about-bottom-left about-bottom-right";
+
+    @include media('<=bigmobile') {
+        grid-template-areas: "about-bottom-right"
+                              "about-bottom-left";
+        grid-template-columns: 100%;
+    }
+
+    .about-bottom__left {
+
+        p {
+            padding: 6% 12%;
+            font-size: 1.4em;
+            line-height: 1.4;
+
+            @include media('<=bigmobile') {
+                font-size: 1.2em;
+            }
+        }
+        grid-area: about-bottom-left;
+
+    }
+    .about-bottom__right {
+        background-image: url(../../img1/medium/5.jpg);
+        background-size: cover;
+        grid-area: about-bottom-right;
+
+        @include media('<=bigmobile') {
+            padding: 25% 0;
+            background-image: url(../../img/small/5.JPG);
+        }
+    }
+}

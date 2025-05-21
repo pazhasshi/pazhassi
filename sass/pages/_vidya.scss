@@ -1,0 +1,108 @@
+.vidyanikethan-top {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "vidyanikethan-top-left vidyanikethan-top-right";
+
+    @include media('<=bigmobile') {
+        grid-template-areas: "vidyanikethan-top-right"
+                             "vidyanikethan-top-left";
+        grid-template-columns: 100%;
+    }
+
+    .vidyanikethan-top__left {
+        grid-area: vidyanikethan-top-left;
+        background-color: #F3F0EA;
+        height: 50vh;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        @include media('<=smalltab') {
+            height: 100%;
+        }
+
+        p {
+            padding: 5%;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+    }
+    .vidyanikethan-top__right {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-area: vidyanikethan-top-right;
+        background: url(../../img1/medium/12.jpg);
+        background-size: cover;
+
+        @include media('<=bigmobile') {
+            padding: 20% 0;
+            background: url(../../img1/small/12.jpg);
+            background-size:cover;
+        }
+
+ h1 {
+                font-size: 200%;
+                border: 5px solid #FFF;
+                font-weight: bold;
+                background: rgba(0,0,0,0.4);
+                color: #FFF;
+                padding: 4%;
+
+                @include media('<=bigmobile') {
+                    font-size: 150%;
+                }
+            }
+    }
+}
+
+.vidyanikethan-middle {
+
+    p {
+        margin: 5% 15%;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+}
+
+.vidyanikethan-bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "vidyanikethan-bottom-left vidyanikethan-bottom-right";
+
+    @include media('<=bigmobile') {
+        grid-template-areas: "vidyanikethan-bottom-left"
+                              "vidyanikethan-bottom-right";
+        grid-template-columns: 100%;
+    }
+
+    .vidyanikethan-bottom__left {
+        grid-area: vidyanikethan-bottom-left;
+        background: url(../../img1/13.jpg);
+        background-size: cover;
+
+        @include media('<=bigmobile') {
+            padding: 28% 0;
+            background: url('../../img1/small/13.jpg');
+            background-size: cover;
+        }
+        
+    }
+    .vidyanikethan-bottom__right {
+        grid-area: vidyanikethan-bottom-right;
+        background-color: #F3F0EA;
+        height: 50vh;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        
+        @include media('<=smalltab') {
+            height: 100%;
+        }
+        p {
+            padding: 2% 7%;
+            font-size: 1.2em;
+            line-height: 1.4;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.contact {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "contact-left contact-right";
+    min-height: 0;
+
+    @include media('<=bigtab') {
+        grid-template-areas: "contact-left"
+                                "contact-right";
+        grid-template-rows: 25% 75%;
+    }
+
+}
+
+.contact-left {
+
+    width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    display: grid;
+    background-color: #F3F0EA;
+    align-items: center;
+    justify-items: center;
+    grid-area: contact-left;
+    background: url(../../img1/medium/3.jpg);
+    background-size: cover;
+
+    @include media('<=bigmobile') {
+        height: 100%;
+        background:url('../../img1/small/3.jpg');
+        background-size: contain;
+    }
+
+    .content {
+        background-color: #fff;
+        padding: 5%;
+
+        @include media('<=bigmobile') {
+        }
+        
+        h3 {
+            line-height: 1.7;
+        }
+    }
+ 
+}
+
+.contact-right {
+    grid-area: contact-right;
+    overflow: hidden;
+    width: 80%;
+
+    @include media('<=bigmobile') {
+        width:100%;
+        height: 100%;
+    }
+}

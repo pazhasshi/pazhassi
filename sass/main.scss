@@ -1,0 +1,17 @@
+@import '../node_modules/include-media/dist/include-media';
+
+
+@import 'common/reset';
+@import 'common/breakpoints';
+@import 'common/fonts';
+@import 'common/footer';
+@import 'common/form';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/gallery';
+@import 'pages/contact';
+@import 'pages/appeal';
+@import 'pages/vidya';
+@import 'pages/swiper';
+@import 'pages/svg';

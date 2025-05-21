@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pazhassi Balamandiram</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+   <div class="container">
+
+       <nav>
+           <div class="logo">
+               <h1>Pazhassi Balamandiram</h1>
+               <h4>Nallurnadu, Mananthavady, Wayand</h4>
+           </div>
+
+           <a href="" class="mobile-menu nav-burger js-menu-toggle">
+               <span class="nav-burger__line"></span>
+               <span class="nav-burger__line"></span>
+               <span class="nav-burger__line"></span>
+           </a>
+
+           <ul class="nav">
+               <li><a href="/#">Home</a></li>
+               <li><a href="about.html">about</a></li>
+               <li><a href="contact.html">contact</a></li>
+               <li><a href="appeal.html">appeal</a></li>
+               <li><a href="gallery.html">gallery</a></li>
+               <li><a class="active" href="vidyanikethan.html">vidyanikethan</a></li>
+           </ul>
+           <div class="tel-no">
+               <a href="tel:+91 91880520050">
+                   <span>Call Us On <strong>+91 9188052050</strong></span>
+               </a>
+           </div>
+       </nav>
+
+       <div class="vidyanikethan-top">
+           <div class="vidyanikethan-top__left">
+               <p>We know fully well that the modern system of education, in spite of its popularity, has sevaral flaws. Cultural values are not imparted to the young minds, who grow up ignorant about the ancient wisdom of our great nation. To make good this handicap we started a school in 2001. Now we have classes up to standard V. Not only our inmates but also children in the adjacent areas study here. We intend to have classes upto standard XII. A comparison between students of this Vidyaniketan and other schools will reveal the perceptible difference in the attitude of the learners. To start higher classes we need good buildings. As in the past, we are looking for assistance from our well wishers.</p>
+               </div>
+           <div class="vidyanikethan-top__right">
+               <h1>Vidyanikethan</h1>
+           </div>
+       </div>
+
+
+       <div class="vidyanikethan-middle">
+
+           <p>We have certain projects before us. One is to have a centre of reseach on Pazhassi Raja. He is remembered as a patriot, but no serious studies have been done on him and his times. This centre will have a library, a museum and information centre. The cost estimated is around Rs. 50 lakhs.</p>
+
+<p>At present our inmates cannot be with us after the age of 21. For those who cannot pursue their studies should have some kind of self employment. We intend to have such small work centres, which will be sources of income generation. A small industries unit is intended to be set up with rough estimate of Rs. 40 lakhs.</p>
+
+       </div>
+
+       <div class="vidyanikethan-bottom">
+           <div class="vidyanikethan-bottom__left"></div>
+           <div class="vidyanikethan-bottom__right">
+               <div class="content">
+
+               <p>The shcool situated on our premises is under expansion. We have a building of 4000 sq.feet. In a few years it will be a three storeyed building. To complete that we need about Rs. 35 lakhs. That will provide quality education with emphasis on Indian culture and tradition.
+
+</p>
+               <p>
+
+Wayanad, situated far away from the plains, is poised for development in the field of eco-tourism. Many people from other areas are posted here for whom adequate accommodation is not available. Several among them are women. It will be of immense help to women who are posted in Wayanad if there is a working women's hostel. A quadrangle of 4000 sq.feet with 24 rooms would cost Rs. 25 lakhs. This has the highest priority among our projects. Once realized we will be self sufficient and move to the community which has been supporting us all these years.</p>
+                </div>
+           </div>
+       </div>
+
+   </div><!-- Container End -->
+<div class="copyright">all rights reserved 2021</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+   <script src="scripts/scripts.js"></script>
+
+   <script>
+       var tlvidya = gsap.timeline();
+
+       tlvidya.from('.vidyanikethan-top__right h1', {opacity:0 , ease:'power1.inOut'})
+              .from('.vidyanikethan-top__left p', { opacity:0, x:20, ease:'power1.inOut'})
+              .from('.vidyanikethan-middle p', { opacity:0, ease:'power1.inOut'})
+              
+   </script>
+    
+</body>
+</html>

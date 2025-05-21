@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pazhassi Balamandiram - About Us</title>
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+   <div class="container">
+
+       <nav>
+           <div class="logo">
+               <h1>Pazhassi Balamandiram</h1>
+               <h4>Nallurnadu, Mananthavady, Wayand</h4>
+           </div>
+
+           <a href="" class="mobile-menu nav-burger js-menu-toggle">
+               <span class="nav-burger__line"></span>
+               <span class="nav-burger__line"></span>
+               <span class="nav-burger__line"></span>
+           </a>
+
+           <ul class="nav">
+               <li><a href="/#">Home</a></li>
+               <li><a class="active" href="about.html">about</a></li>
+               <li><a href="contact.html">contact</a></li>
+               <li><a href="appeal.html">appeal</a></li>
+               <li><a href="gallery.html">gallery</a></li>
+               <li><a href="vidyanikethan.html">vidyanikethan</a></li>
+           </ul>
+           <div class="tel-no">
+               <a href="tel:+91 91880520050">
+                   <span>Call Us On <strong>+91 9188052050</strong></span>
+               </a>
+           </div>
+       </nav>
+
+       <div class="about-hero">
+           <div class="about-hero__left">
+                   <h1>Pazhassi Balamandiram</h1>
+           </div>
+           <div class="about-hero__right">
+               <p>This institution is situated in a picturesque landscape at Nallurnad, just 4 kms, away from Mananthavady on the Mananthavady - Kozhikode route. It is named after Pazhassi Raja, who fought a valiant and relentless battle against the British in the last two decades of the eighteenth century.</p>
+           </div>
+       </div>
+
+       <div class="about-center">
+           <p>We had a humble beginning with just. two inmates and now we have about 30 boys, who hail from almost all the Districts of Kerala. They come from the under privileged sections of the society and are given food, education and shelter. Most of them are students in the neighbouring schools and the remaining are studying in the Vidyaniketan school functioning on our premises. In addition to education they are given training in farming, cattle rearing, spiritual practices, etc. The daily routine includes yoga, meditation, chanting of the Gita, Bhajans and so on.</p>
+       </div>
+
+       <div class="about-bottom">
+           <div class="about-bottom__left">
+               <p>An institution like this needs public support and it is a challenge. Our needs are met through public collection, agriculture and a nominal grant from the Social Welfare department of the Govt. of Kerala. It is essential to have a corpus fund which can help us tide over in times of need. We remember with gratitude the generous contributions made by our well-wishers from far and near. Many contribute in times of their birthdays, wedding anniversaries. Contributions are also made during the observance of Death anniversaries. These have helped us immensely</p>
+           </div>
+           <div class="about-bottom__right"></div>
+       </div>
+
+       <div class="copyright">all rights reserved 2021</div>
+   </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+   <script src="scripts/scripts.js"></script>
+   <script>
+            /* Greensock Animation About Us Page */
+
+            var tlabout = gsap.timeline();
+
+  tlabout.from('.about-hero__left h1',{opacity:0,ease:"power1.inOut"})
+        .from('.about-hero__right p',{opacity:0,x:20,ease:"poser1.inOut"})
+        .from('.about-center p',{opacity:0, ease:"power1.inOut"})
+   </script>
+</body>
+</html>

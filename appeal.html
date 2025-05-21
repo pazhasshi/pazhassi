@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pazhassi Balamandiram</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+   <div class="container">
+
+       <nav>
+           <div class="logo">
+               <h1>Pazhassi Balamandiram</h1>
+               <h4>Nallurnadu, Mananthavady, Wayand</h4>
+           </div>
+
+           <a href="" class="mobile-menu nav-burger js-menu-toggle">
+               <span class="nav-burger__line"></span>
+               <span class="nav-burger__line"></span>
+               <span class="nav-burger__line"></span>
+           </a>
+
+           <ul class="nav">
+               <li><a href="/#">Home</a></li>
+               <li><a href="about.html">about</a></li>
+               <li><a href="contact.html">contact</a></li>
+               <li><a class="active" href="appeal.html">appeal</a></li>
+               <li><a href="gallery.html">gallery</a></li>
+               <li><a href="vidyanikethan.html">vidyanikethan</a></li>
+           </ul>
+           <div class="tel-no">
+               <a href="tel:+91 91880520050">
+                   <span>Call Us On <strong>+91 9188052050</strong></span>
+               </a>
+           </div>
+       </nav>
+
+
+       <div class="appeal">
+           <div class="appeal-left">
+               <div class="appeal-left__wrapper">
+                   <h1>An Appeal</h1>
+                   <p>Considering the initial resources we had, our achievement is remarkable, but a lot more remains to
+                       be done. There should be no orphan in our land and it is a stain on the society. Being an orphan
+                       is not a crime and the fault lies with the society. Our institution has to grow to be a beacon of
+                       hope to countless children. We request your patronage in this noble yajana. You are welcome to
+                       call on us or write to us.</p>
+               </div>
+           </div>
+           <div class="appeal-right">
+               <table>
+                   <tr>
+                       <td>1</td>
+                       <td>Expense for one boy per day (Board, lodge, studies)</td>
+                       <td>Rs.100</td>
+                   </tr>
+                   <tr>
+                       <td>2</td>
+                       <td>Expense for 10 boys per day</td>
+                       <td>Rs.1000</td>
+                   </tr>
+                   <tr>
+                       <td>3</td>
+                       <td>Expense for one boy per month</td>
+                       <td>Rs.3000</td>
+                   </tr>
+                   <tr>
+                       <td>4</td>
+                       <td>Expense for one boy for six months</td>
+                       <td>Rs.18000</td>
+                   </tr>
+                   <tr>
+                       <td>5</td>
+                       <td>Annual expenses for one boy</td>
+                       <td>Rs.30000</td>
+                   </tr>
+                   <tr>
+                       <td>6</td>
+                       <td>Life long sponsorship of one boy</td>
+                       <td>Rs.100000</td>
+                   </tr>
+                   <tr>
+                       <td>7</td>
+                       <td>Annual education expenses for one boy</td>
+                       <td>Rs.3000</td>
+                   </tr>
+                   <tr>
+                       <td>8</td>
+                       <td>Educational expenses for 5 years per boy</td>
+                       <td>Rs.15000</td>
+                   </tr>
+                   <tr>
+                       <td>9</td>
+                       <td>One set of uniform per boy</td>
+                       <td>Rs.1200</td>
+                   </tr>
+                   <tr>
+                       <td>10</td>
+                       <td>Food for one day including feast</td>
+                       <td>Rs.5000</td>
+                   </tr>
+                   <tr>
+                       <td>11</td>
+                       <td>Food for one day for all</td>
+                       <td>Rs.3000</td>
+                   </tr>
+               </table>
+           </div>
+        <div class="appeal-bottom">
+            <div class="appeal-bottom__content">
+           <div class="content">
+               <p>Donations to Pazhassi Balamandiram are Exempted from Income tax as per sec. 80G of Income Tax Act. 1961 and FCRA Act 1976 Reg. No. 052850448/2.06.2001 Govt. of India</p>
+               <p>Please send your Donations to </p>
+               <h3>President, Pazhassi Balamandiram </h3>
+               <h3>Nallurnad, Mananthavady - 670645</h3>
+               <h3>Waynad, India</h3>
+               <h4>Our Bank Details</h4>
+           </div>
+           <div class="appeal-bottom__left">
+               <h3>State Bank Of India, Mananthavady</h3>
+               <h4>A/c No: 33621585058</h4>
+               <h4>IFSC: SBIN0010699</h4>
+           </div>
+           <div class="appeal-bottom__right">
+               <h3>Syndicate Bank, Mananthavady</h3>
+               <h4>A/c No: 42162200033049</h4>
+               <h4>IFSC: SYNB0004216</h4>
+           </div>
+       </div>
+       </div>
+       </div>
+
+       
+
+
+   </div><!-- End of Container Div -->
+<div class="copyright">all rights reserved 2021</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+   <script src="scripts/scripts.js"></script>
+   <script>
+
+       var tlappeal = gsap.timeline();
+
+       tlappeal.from('.appeal-left__wrapper h1',{opacity:0,ease:'poser1.inOut'})
+                .from('.appeal-left__wrapper p', { opacity:0, x: 20, ease:'poser1.inOut'})
+                .from('.appeal-right table', { opacity:0, ease:'power1.inOut'})
+
+       </script>
+<body>
+    
+</body>
+</html>

@@ -251,7 +251,7 @@ html, body {
 }
 
 .home-bottom__left {
-  background-image: url(../img1/1.jpg);
+  background-image: url(./pazhassi/img1/1.jpg);
   background-size: cover;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -569,7 +569,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  background-image: url(../../img1/medium/7.jpg);
+  background-image: url(../pazhassi/img1/medium/7.jpg);
   background-size: cover;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -581,7 +581,7 @@ h2 {
 @media (max-width: 790px) {
   .about-hero .about-hero__left {
     padding: 20% 0;
-    background-image: url(../../img1/small/7.jpg);
+    background-image: url(../pazhassi/img1/small/7.jpg);
   }
 }
 
@@ -675,7 +675,7 @@ h2 {
 }
 
 .about-bottom .about-bottom__right {
-  background-image: url(../../img1/medium/5.jpg);
+  background-image: url(../../pazhassi/img1/medium/5.jpg);
   background-size: cover;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
